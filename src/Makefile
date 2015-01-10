@@ -128,7 +128,7 @@ $(BINDIR)/polyselect : polyselect.c $(OBJS)
 	$(CC) $(INC) $(CFLAGS) $(LIBFLAGS) -o $@ polyselect.c $(OBJS) $(LIBS)
 
 latsiever :
-	$(MAKE) -C lasieve4
+	#$(MAKE) -C lasieve4 # yafu_setup_package
 
 polsel :
 	$(MAKE) -C pol5

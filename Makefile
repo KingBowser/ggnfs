@@ -4,8 +4,8 @@ THISDIR=branch_0
 TOOLSPREFIX=
 #TOOLSPREFIX=i586-mingw32msvc-
 
-LOCALINC=-I/usr/local/include
-LOCALLIB=-L/usr/local/lib
+LOCALINC=-I/usr/local/include -I$(PREFIX)/include
+LOCALLIB=-L/usr/local/lib -L$(PREFIX)/lib
 
 CC=$(TOOLSPREFIX)gcc
 CPP=$(TOOLSPREFIX)g++
